@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Bienvenue dans notre application de gestion ! Ce guide vous aidera à comprendre les différentes fonctionnalités et les boutons de l'application. Vous trouverez ci-dessous une explication détaillée des boutons, des formulaires et des comportements importants au sein de l'application.</value>
+  </data>
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value>Après vous être connecté, vous verrez le tableau de bord principal qui fournit un aperçu de l'état du système, y compris les décomptes des enregistrements pour diverses entités telles que les clients, les produits, les chauffeurs, les camions, les bons de livraison et les voyages.</value>
+  </data>
+  <data name="richTextBox3.Text" xml:space="preserve">
+    <value>Bouton Accueil : Retourne au tableau de bord principal et actualise les décomptes des enregistrements affichés sur les étiquettes.
+Bouton Clients : Ouvre le formulaire de gestion des clients où vous pouvez ajouter, mettre à jour et supprimer des enregistrements de clients.
+Bouton Produits : Ouvre le formulaire de gestion des produits où vous pouvez gérer les produits dans votre inventaire.
+Bouton Voyages : Ouvre le formulaire de gestion des voyages pour gérer les enregistrements de voyages.
+Bouton Finances : Contient des sous-menus pour gérer les revenus et les dépenses.
+Bouton Revenus : Ouvre le formulaire de gestion des revenus.
+Bouton Dépenses : Ouvre le formulaire de gestion des dépenses.
+Bouton Rappels : Contient des sous-menus pour gérer les rappels pour les chauffeurs et les camions.
+Bouton Rappels Chauffeurs : Ouvre le formulaire de gestion des rappels pour les chauffeurs.
+Bouton Rappels Camions : Ouvre le formulaire de gestion des rappels pour les camions.
+Bouton Maintenance : Ouvre le formulaire de gestion de la maintenance.
+Bouton Paramètres : Ouvre le menu des paramètres où vous pouvez configurer les paramètres de l'application.</value>
+  </data>
+  <data name="richTextBox4.Text" xml:space="preserve">
+    <value>Chaque formulaire de gestion s'ouvre dans le panneau principal pour offrir une expérience utilisateur fluide. Lorsque vous sélectionnez un élément de menu, le formulaire correspondant s'affiche, vous permettant d'effectuer les actions nécessaires.</value>
+  </data>
+  <data name="richTextBox5.Text" xml:space="preserve">
+    <value>Il est important de noter que certains enregistrements ne peuvent pas être supprimés s'ils sont liés à d'autres données. Ceci pour maintenir l'intégrité de la base de données. Par exemple :
+
+Voyages : Vous ne pouvez pas supprimer un voyage s'il a des enregistrements de paiements ou de dépenses liés. Pour supprimer un tel voyage, vous devez d'abord supprimer tous les paiements et les dépenses liés.
+Clients, Produits, Chauffeurs, Camions : De même, ces entités peuvent avoir des enregistrements liés qui empêchent leur suppression. Assurez-vous que les données liées sont supprimées avant de tenter de supprimer ces enregistrements.</value>
+  </data>
+  <data name="richTextBox6.Text" xml:space="preserve">
+    <value>Le menu des paramètres vous permet de configurer divers aspects de l'application. Ce menu est accessible depuis le tableau de bord principal et offre des options pour personnaliser l'application selon vos besoins.</value>
+  </data>
+  <data name="richTextBox7.Text" xml:space="preserve">
+    <value>Si une erreur survient, par exemple lors de la tentative de suppression d'un enregistrement avec des données liées, un message d'erreur s'affichera expliquant le problème. Suivez les instructions du message d'erreur pour résoudre le problème.</value>
+  </data>
+  <data name="richTextBox8.Text" xml:space="preserve">
+    <value>Cette application est conçue pour vous aider à gérer efficacement les clients, les produits, les voyages, les finances, les rappels et les tâches de maintenance. Comprendre la navigation et les règles de suppression garantira une expérience utilisateur fluide et efficace. Si vous avez besoin d'une assistance supplémentaire, consultez ce guide ou contactez le support.</value>
+  </data>
+</root>

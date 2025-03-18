@@ -1,0 +1,1100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{11198691-607A-4539-B2B7-31200D0709A6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication27</RootNamespace>
+    <AssemblyName>WindowsFormsApplication27</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\badrd\Downloads\Gestion_TransportMarchandises\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>834206E82E717713670D7DEACC02F488582D4772</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WindowsFormsApplication27_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.AxShockwaveFlashObjects.13.0.4003\lib\net40\AxShockwaveFlashObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.Design.13.0.4003\lib\net40\CrystalDecisions.CrystalReports.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.Engine.13.0.4003\lib\net40\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.ClientDoc.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.ClientDoc.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommLayer, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CommLayer.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.CommLayer.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonControls, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CommonControls.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.CommonControls.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CommonObjectModel.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.CommonObjectModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.Controllers.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.Controllers.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CubeDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CubeDefModel.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.CubeDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.DataDefModel.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.DataDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataSetConversion, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.DataSetConversion.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.DataSetConversion.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ObjectFactory, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.ObjectFactory.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.ObjectFactory.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Prompting, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.Prompting.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.Prompting.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ReportDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.ReportDefModel.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.ReportDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.XmlSerialize, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.XmlSerialize.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.XmlSerialize.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportSource.13.0.4003\lib\net40\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.Shared.13.0.4003\lib\net40\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.Web.13.0.4003\lib\net40\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v23.2, Version=23.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Data.23.2.6\lib\net452\DevExpress.Data.v23.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.WinterJoySkin, Version=1.0.2.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.WinterJoySkin.1.0.2\lib\net452\DevExpress.WinterJoySkin.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.17.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.17\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.WebForms.10.0.40219.1\lib\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.2478.35, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2478.35\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.2478.35, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2478.35\lib\net45\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.2478.35, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2478.35\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=110.2.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.110.2.0\lib\net471\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SAPBusinessObjects.WPF.Viewer, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.WPF.Viewer.13.0.4003\lib\net40\SAPBusinessObjects.WPF.Viewer.dll</HintPath>
+    </Reference>
+    <Reference Include="SAPBusinessObjects.WPF.ViewerShared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.WPF.ViewerShared.13.0.4003\lib\net40\SAPBusinessObjects.WPF.ViewerShared.dll</HintPath>
+    </Reference>
+    <Reference Include="ShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ShockwaveFlashObjects.13.0.4003\lib\net40\ShockwaveFlashObjects.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.CodeDom, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.CodeDom.8.0.0\lib\net462\System.CodeDom.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.7.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=7.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.7.0.2\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACTIONLOG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACTIONLOG.Designer.cs">
+      <DependentUpon>ACTIONLOG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="DB_General.cs" />
+    <Compile Include="Directlive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Directlive.Designer.cs">
+      <DependentUpon>Directlive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERRORFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERRORFORM.Designer.cs">
+      <DependentUpon>ERRORFORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="factureinternational.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>factureinternational.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="facturenational - Copy.cs">
+      <DependentUpon>facturenational - Copy.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="facturenational.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>facturenational.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FORGET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORGET.Designer.cs">
+      <DependentUpon>FORGET.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTCAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTCAM.Designer.cs">
+      <DependentUpon>GESTCAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTCAM1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTCAM1.Designer.cs">
+      <DependentUpon>GESTCAM1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTCAM2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTCAM2.Designer.cs">
+      <DependentUpon>GESTCAM2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTCHAUFF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTCHAUFF.Designer.cs">
+      <DependentUpon>GESTCHAUFF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTCHAUFF1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTCHAUFF1.Designer.cs">
+      <DependentUpon>GESTCHAUFF1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTCHAUFF2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTCHAUFF2.Designer.cs">
+      <DependentUpon>GESTCHAUFF2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTCLT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTCLT.Designer.cs">
+      <DependentUpon>GESTCLT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTCLT1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTCLT1.Designer.cs">
+      <DependentUpon>GESTCLT1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTCLT2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTCLT2.Designer.cs">
+      <DependentUpon>GESTCLT2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTDEP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTDEP.Designer.cs">
+      <DependentUpon>GESTDEP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTDEP1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTDEP1.Designer.cs">
+      <DependentUpon>GESTDEP1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTDEP2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTDEP2.Designer.cs">
+      <DependentUpon>GESTDEP2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTFACTURE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTFACTURE.Designer.cs">
+      <DependentUpon>GESTFACTURE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTFRIGO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTFRIGO.Designer.cs">
+      <DependentUpon>GESTFRIGO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTFRIGO1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTFRIGO1.Designer.cs">
+      <DependentUpon>GESTFRIGO1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTFRIGO2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTFRIGO2.Designer.cs">
+      <DependentUpon>GESTFRIGO2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTMAIN2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTMAIN2.Designer.cs">
+      <DependentUpon>GESTMAIN2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTMAINT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTMAINT.Designer.cs">
+      <DependentUpon>GESTMAINT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTMAINT1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTMAINT1.Designer.cs">
+      <DependentUpon>GESTMAINT1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTPAIM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTPAIM.Designer.cs">
+      <DependentUpon>GESTPAIM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTPAIM1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTPAIM1.Designer.cs">
+      <DependentUpon>GESTPAIM1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTPAIM2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTPAIM2.Designer.cs">
+      <DependentUpon>GESTPAIM2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTPRD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTPRD.Designer.cs">
+      <DependentUpon>GESTPRD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTPRD1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTPRD1.Designer.cs">
+      <DependentUpon>GESTPRD1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTPRD2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTPRD2.Designer.cs">
+      <DependentUpon>GESTPRD2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTRAPCAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTRAPCAM.Designer.cs">
+      <DependentUpon>GESTRAPCAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTRAPCAM1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTRAPCAM1.Designer.cs">
+      <DependentUpon>GESTRAPCAM1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTRAPCAM2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTRAPCAM2.Designer.cs">
+      <DependentUpon>GESTRAPCAM2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTRAPCH1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTRAPCH1.Designer.cs">
+      <DependentUpon>GESTRAPCH1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTRAPCH2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTRAPCH2.Designer.cs">
+      <DependentUpon>GESTRAPCH2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTRAPPCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTRAPPCH.Designer.cs">
+      <DependentUpon>GESTRAPPCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTUSER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTUSER.Designer.cs">
+      <DependentUpon>GESTUSER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTUSER1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTUSER1.Designer.cs">
+      <DependentUpon>GESTUSER1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTUSER2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTUSER2.Designer.cs">
+      <DependentUpon>GESTUSER2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTVOYAGE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTVOYAGE.Designer.cs">
+      <DependentUpon>GESTVOYAGE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTVYGE1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTVYGE1.Designer.cs">
+      <DependentUpon>GESTVYGE1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GESTVYGE2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESTVYGE2.Designer.cs">
+      <DependentUpon>GESTVYGE2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="info.Designer.cs">
+      <DependentUpon>info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOAD.Designer.cs">
+      <DependentUpon>LOAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="HISTOIR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HISTOIR.Designer.cs">
+      <DependentUpon>HISTOIR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RESTOREDATA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RESTOREDATA.Designer.cs">
+      <DependentUpon>RESTOREDATA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToastForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToastForm.Designer.cs">
+      <DependentUpon>ToastForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER.Designer.cs">
+      <DependentUpon>USER.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ACTIONLOG.resx">
+      <DependentUpon>ACTIONLOG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Directlive.resx">
+      <DependentUpon>Directlive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERRORFORM.resx">
+      <DependentUpon>ERRORFORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factureinternational.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>factureinternational.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="facturenational - Copy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>facturenational - Copy.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="facturenational.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>facturenational.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORGET.resx">
+      <DependentUpon>FORGET.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTCAM.resx">
+      <DependentUpon>GESTCAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTCAM1.resx">
+      <DependentUpon>GESTCAM1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTCAM2.resx">
+      <DependentUpon>GESTCAM2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTCHAUFF.resx">
+      <DependentUpon>GESTCHAUFF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTCHAUFF1.resx">
+      <DependentUpon>GESTCHAUFF1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTCHAUFF2.resx">
+      <DependentUpon>GESTCHAUFF2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTCLT.resx">
+      <DependentUpon>GESTCLT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTCLT1.resx">
+      <DependentUpon>GESTCLT1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTCLT2.resx">
+      <DependentUpon>GESTCLT2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTDEP.resx">
+      <DependentUpon>GESTDEP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTDEP1.resx">
+      <DependentUpon>GESTDEP1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTDEP2.resx">
+      <DependentUpon>GESTDEP2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTFACTURE.resx">
+      <DependentUpon>GESTFACTURE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTFRIGO.resx">
+      <DependentUpon>GESTFRIGO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTFRIGO1.resx">
+      <DependentUpon>GESTFRIGO1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTFRIGO2.resx">
+      <DependentUpon>GESTFRIGO2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTMAIN2.resx">
+      <DependentUpon>GESTMAIN2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTMAINT.resx">
+      <DependentUpon>GESTMAINT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTMAINT1.resx">
+      <DependentUpon>GESTMAINT1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTPAIM.resx">
+      <DependentUpon>GESTPAIM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTPAIM1.resx">
+      <DependentUpon>GESTPAIM1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTPAIM2.resx">
+      <DependentUpon>GESTPAIM2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTPRD.resx">
+      <DependentUpon>GESTPRD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTPRD1.resx">
+      <DependentUpon>GESTPRD1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTPRD2.resx">
+      <DependentUpon>GESTPRD2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTRAPCAM.resx">
+      <DependentUpon>GESTRAPCAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTRAPCAM1.resx">
+      <DependentUpon>GESTRAPCAM1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTRAPCAM2.resx">
+      <DependentUpon>GESTRAPCAM2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTRAPCH1.resx">
+      <DependentUpon>GESTRAPCH1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTRAPCH2.resx">
+      <DependentUpon>GESTRAPCH2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTRAPPCH.resx">
+      <DependentUpon>GESTRAPPCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTUSER.resx">
+      <DependentUpon>GESTUSER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTUSER1.resx">
+      <DependentUpon>GESTUSER1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTUSER2.resx">
+      <DependentUpon>GESTUSER2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTVOYAGE.resx">
+      <DependentUpon>GESTVOYAGE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTVYGE1.resx">
+      <DependentUpon>GESTVYGE1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESTVYGE2.resx">
+      <DependentUpon>GESTVYGE2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="info.resx">
+      <DependentUpon>info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOAD.resx">
+      <DependentUpon>LOAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="HISTOIR.resx">
+      <DependentUpon>HISTOIR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RESTOREDATA.resx">
+      <DependentUpon>RESTOREDATA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToastForm.resx">
+      <DependentUpon>ToastForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER.resx">
+      <DependentUpon>USER.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Scripts\jquery-3.5.1.min.map" />
+    <None Include="Scripts\jquery-3.5.1.slim.min.map" />
+    <None Include="Scripts\mediaelement\silverlightmediaelement.xap" />
+    <None Include="WindowsFormsApplication27_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camion-de-marchandises.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Illustrative Transport Flashcards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Illustrative Transport Flashcards %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Illustrative Transport Flashcards %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Illustrative Transport Flashcards %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Illustrative Transport Flashcards %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recuperation-de-donnees.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recuperation-de-donnees %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supprimer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-retour-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-client-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-navigator-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-nouveau-message-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-téléphone-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-liste-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-liste-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-poubelle-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-effacer-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-client-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-client-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-chercher-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rafraîchir-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refresh-button-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refresh-button-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-réservation-2-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-produit-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-chauffeur-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-camion-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-truck-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-jusqu%27à-la-date-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-statut-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-suivi-de-livraison-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-commande-en-route-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-produit-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-type-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-poids-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-description-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-commande-en-route-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-travail-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-travail-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-remboursement-2-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-notifications-push-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-chauffeur-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-histoire-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-histoire-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-local-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-local-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-performance-de-ventes-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sac-d%27argent-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-money-transfer-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-accueil-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-accueil-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-accueil-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-carte-en-cours-d%27utilisation-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-genre-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-age-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-voiture-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-batterie-emoji-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paramètres-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-info-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sortie-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-male-user-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mot-de-passe-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-argent-liquide-en-main-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dépréciation-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-graphique-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\growth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-market.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Removal-103.png" />
+    <None Include="Resources\medtrns83.png" />
+    <None Include="Resources\medtrns.png" />
+    <None Include="Resources\tns5.png" />
+    <None Include="Resources\trnsbn.png" />
+    <None Include="Resources\cargo.png" />
+    <None Include="Resources\icons8-histoire-48 %282%29.png" />
+    <None Include="Resources\icons8-palette-de-couleurs-48.png" />
+    <None Include="Resources\icons8-restauration-de-sauvegarde-sur-le-cloud-48.png" />
+    <None Include="Resources\icons8-microsoft-excel-2019-48.png" />
+    <None Include="Resources\icons8-ligne-horizontale-64.png" />
+    <None Include="Resources\icons8-evénement-accepté-48.png" />
+    <None Include="Resources\icons8-ok-48.png" />
+    <None Include="Resources\exporter-csv-48.png" />
+    <None Include="Resources\csv-48.png" />
+    <None Include="Resources\annuler-48.png" />
+    <None Include="Resources\attention-48.png" />
+    <None Include="Resources\annuler-481.png" />
+    <None Include="Resources\icons8-réduire-48.png" />
+    <None Include="Resources\icons8-réservation-2-481.png" />
+    <Content Include="Resources\mapanime.mp4" />
+    <Content Include="Scripts\mediaelement\background.png" />
+    <Content Include="Scripts\mediaelement\bigplay.fw.png" />
+    <Content Include="Scripts\mediaelement\bigplay.png" />
+    <Content Include="Scripts\mediaelement\bigplay.svg" />
+    <Content Include="Scripts\mediaelement\controls-ted.png" />
+    <Content Include="Scripts\mediaelement\controls-wmp-bg.png" />
+    <Content Include="Scripts\mediaelement\controls-wmp.png" />
+    <Content Include="Scripts\mediaelement\controls.fw.png" />
+    <Content Include="Scripts\mediaelement\controls.png" />
+    <Content Include="Scripts\mediaelement\controls.svg" />
+    <Content Include="Scripts\mediaelement\flashmediaelement-cdn.swf" />
+    <Content Include="Scripts\mediaelement\flashmediaelement-debug.swf" />
+    <Content Include="Scripts\mediaelement\flashmediaelement.swf" />
+    <Content Include="Scripts\mediaelement\jumpforward.png" />
+    <Content Include="Scripts\mediaelement\lang\me-i18n-locale-cs.js" />
+    <Content Include="Scripts\mediaelement\lang\me-i18n-locale-de.js" />
+    <Content Include="Scripts\mediaelement\lang\me-i18n-locale-en.js" />
+    <Content Include="Scripts\mediaelement\lang\me-i18n-locale-es.js" />
+    <Content Include="Scripts\mediaelement\lang\me-i18n-locale-fr.js" />
+    <Content Include="Scripts\mediaelement\lang\me-i18n-locale-hu.js" />
+    <Content Include="Scripts\mediaelement\lang\me-i18n-locale-it.js" />
+    <Content Include="Scripts\mediaelement\lang\me-i18n-locale-ja.js" />
+    <Content Include="Scripts\mediaelement\lang\me-i18n-locale-ko.js" />
+    <Content Include="Scripts\mediaelement\lang\me-i18n-locale-nl.js" />
+    <Content Include="Scripts\mediaelement\lang\me-i18n-locale-pl.js" />
+    <Content Include="Scripts\mediaelement\lang\me-i18n-locale-pt-br.js" />
+    <Content Include="Scripts\mediaelement\lang\me-i18n-locale-pt.js" />
+    <Content Include="Scripts\mediaelement\lang\me-i18n-locale-ro.js" />
+    <Content Include="Scripts\mediaelement\lang\me-i18n-locale-ru.js" />
+    <Content Include="Scripts\mediaelement\lang\me-i18n-locale-sk.js" />
+    <Content Include="Scripts\mediaelement\lang\me-i18n-locale-zh-cn.js" />
+    <Content Include="Scripts\mediaelement\lang\me-i18n-locale-zh.js" />
+    <Content Include="Scripts\mediaelement\loading.gif" />
+    <Content Include="Scripts\mediaelement\mediaelement-and-player.js" />
+    <Content Include="Scripts\mediaelement\mediaelement-and-player.min.js" />
+    <Content Include="Scripts\mediaelement\mediaelement.js" />
+    <Content Include="Scripts\mediaelement\mediaelement.min.js" />
+    <Content Include="Scripts\mediaelement\mediaelementplayer.css" />
+    <Content Include="Scripts\mediaelement\mediaelementplayer.js" />
+    <Content Include="Scripts\mediaelement\mediaelementplayer.min.css" />
+    <Content Include="Scripts\mediaelement\mediaelementplayer.min.js" />
+    <Content Include="Scripts\mediaelement\mejs-skins.css" />
+    <Content Include="Scripts\mediaelement\skipback.png" />
+    <None Include="Resources\icons8-marché-48.png" />
+    <None Include="Resources\icons8-parking-48.png" />
+    <None Include="Resources\icons8-transit-48.png" />
+    <None Include="Resources\icons8-carburant-48.png" />
+    <None Include="Resources\icons8-maintenence-48.png" />
+    <None Include="Resources\icons8-container-55.png" />
+    <None Include="Resources\frigggggg.png" />
+    <None Include="Resources\Removal-435.png" />
+    <None Include="Resources\frigo.png" />
+    <None Include="Resources\container %281%29.png" />
+    <None Include="Resources\container.png" />
+    <Content Include="Scripts\cldr.js" />
+    <Content Include="Scripts\cldr\event.js" />
+    <Content Include="Scripts\cldr\supplemental.js" />
+    <Content Include="Scripts\cldr\unresolved.js" />
+    <Content Include="Scripts\dx.viz.debug.js" />
+    <Content Include="Scripts\dx.viz.js" />
+    <Content Include="Scripts\globalize.js" />
+    <Content Include="Scripts\globalize\currency.js" />
+    <Content Include="Scripts\globalize\date.js" />
+    <Content Include="Scripts\globalize\message.js" />
+    <Content Include="Scripts\globalize\number.js" />
+    <Content Include="Scripts\globalize\plural.js" />
+    <Content Include="Scripts\globalize\relative-time.js" />
+    <Content Include="Scripts\globalize\unit.js" />
+    <Content Include="Scripts\jquery-3.5.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.5.1.js" />
+    <Content Include="Scripts\jquery-3.5.1.min.js" />
+    <Content Include="Scripts\jquery-3.5.1.slim.js" />
+    <Content Include="Scripts\jquery-3.5.1.slim.min.js" />
+    <Content Include="Scripts\vectormap-data\africa.js" />
+    <Content Include="Scripts\vectormap-data\canada.js" />
+    <Content Include="Scripts\vectormap-data\eurasia.js" />
+    <Content Include="Scripts\vectormap-data\europe.js" />
+    <Content Include="Scripts\vectormap-data\usa.js" />
+    <Content Include="Scripts\vectormap-data\world.js" />
+    <Content Include="Scripts\vectormap-utils\dx.vectormaputils.debug.js" />
+    <Content Include="Scripts\vectormap-utils\dx.vectormaputils.js" />
+    <Content Include="Scripts\vectormap-utils\dx.vectormaputils.node.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.2478.35\build\Microsoft.Web.WebView2.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
